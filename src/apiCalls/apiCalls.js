@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const Client = axios.create({
-    baseURL: "http://localhost:3000/user",
+    baseURL: "https://smoke-tree-address-book-624wbj3dl-chetans-projects-95522109.vercel.app/user",
 });
 
 export const signin = async (data) => {

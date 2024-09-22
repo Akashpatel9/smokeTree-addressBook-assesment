@@ -87,7 +87,7 @@ function App() {
               {isActive === "user" && <AddAddress />}
               {isActive === "address" && (
                 <AllAddress
-                  addresses={user.data.addresses}
+                  addresses={user?.data?.addresses || []}
                 />
               )}
             </div>

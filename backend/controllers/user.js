@@ -72,9 +72,10 @@ export const signupHandler = async (req, res) => {
         }
 
         // Create a new user
-        await User.create({ email: username });
+        const data = await User.create({ email: username });
 
         return res.status(200).json({
+            data,
             message: "Successfully registered",
             success: true,
         });
