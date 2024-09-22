@@ -41,7 +41,7 @@ const LoginScreen = () => {
       <div style={styles.inputContainer}>
         <input
           type="text"
-          placeholder="Enter username"
+          placeholder="abcd@gmail.com"
           value={username}
           onChange={handleUsernameChange}
           style={styles.input}
